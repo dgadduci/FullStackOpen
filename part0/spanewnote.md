@@ -1,4 +1,4 @@
-# 0.5 SPA new note diagram
+# 0.6 SPA new note diagram
 
 ```mermaid
 sequenceDiagram
