@@ -5,8 +5,8 @@ sequenceDiagram
     participant B as Browser
     participant S as Server
 
-    activate S
     B->>S: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    activate S
     Note right of B:Send form data {note: new value}
     Note left of S: The server adds the new note to the list of notes 
     deactivate S
