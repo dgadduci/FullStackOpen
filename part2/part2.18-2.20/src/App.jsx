@@ -1,4 +1,5 @@
-import './styles/tileCountry.css';
+import "./styles/tileCountry.css";
+import "./styles/app.css";
 
 import { useState } from "react";
 import Filter from "./components/Filter";
@@ -39,19 +40,20 @@ const App = () => {
         countrie.name.common.toLowerCase().includes(value.toLowerCase())
       );
       setCountriesShow(list);
-    }else {
+    } else {
       setCountriesShow([]);
     }
   };
 
-  return (
+  return countries.length != 0 ? (
     <div>
       find countries:
       <Filter value={filterInput} handle={handleFilter} />
-      {/* {countriesShow.map((countrie) => (
-        <p key={countrie.id}>{countrie.name.common}</p>
-      ))} */}
       <ListCountries countries={countriesShow} />
+    </div>
+  ) : (
+    <div className="divcenter">
+      <div className="screencenter">cargando...</div>
     </div>
   );
 };

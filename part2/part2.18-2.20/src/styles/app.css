@@ -1,0 +1,11 @@
+.screencenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .divcenter {
+    text-align: center;
+    font-size: xx-large;
+    color: blue;
+  }
