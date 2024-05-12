@@ -1,12 +1,15 @@
-# fly.toml app configuration file generated for test-dgadduci on 2024-05-11T18:53:32-03:00
+# fly.toml app configuration file generated for part3-test-back on 2024-05-11T21:21:48-03:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'test-dgadduci'
+app = 'part3-test-back'
 primary_region = 'eze'
 
 [build]
+
+[env]
+  PORT = "3000"
 
 [http_service]
   internal_port = 3000
