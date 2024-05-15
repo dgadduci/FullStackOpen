@@ -3,8 +3,8 @@ const mongoose = require("mongoose");
 
 const password = process.argv[2];
 
-const url = process.env.MONGODB_URI
-
+//const url = process.env.MONGODB_URI
+const url = "mongodb+srv://fullstack:Fran_21071971@cluster0.fghbckr.mongodb.net/phoneApp?retryWrites=true&w=majority&appName=Cluster0";
 mongoose.set("strictQuery", false);
 
 mongoose.connect(url).
