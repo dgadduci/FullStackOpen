@@ -24,8 +24,9 @@ const getId = () => {
 };
 
 app.get("/api/persons", (request, response) => {
-  Person.find({}).then((person) => {
-    response.json(person);
+  Person.find({}).then((persons) => {
+    //response.json(persons);
+    response.send("paso por find");
   });
 });
 
