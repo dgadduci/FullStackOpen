@@ -26,6 +26,7 @@ const getId = () => {
 app.get("/api/persons", (request, response) => {
   Person.find({}).then((persons) => {
     //response.json(persons);
+    console.log("paso");
     response.send("paso por find");
   });
 });
